@@ -17,6 +17,7 @@ public:
 signals:
 
 public slots:
+    void newWidget();
 };
 
 #endif // MAINWINDOW_H

@@ -15,8 +15,15 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void newMainWindow();
+    void getText();
+    void printText();
+
 private:
     Ui::MainWindow *ui;
+
+    QString str;
 };
 
 #endif // MAINWINDOW_H
