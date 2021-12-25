@@ -1,4 +1,5 @@
 #include "widget.h"
+#include "mainwindow.h"
 
 #include <QApplication>
 #include <QLocale>
