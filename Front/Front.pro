@@ -18,7 +18,8 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
-    widget.ui
+    widget.ui \
+    mainwindow.ui
 
 TRANSLATIONS += \
     Front_zh_CN.ts
