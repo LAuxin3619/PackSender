@@ -9,7 +9,7 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPushButton * btn = new QPushButton("A",this);
+    QPushButton * btn = new QPushButton("退出",this);
     btn->show();
 
 
