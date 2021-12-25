@@ -9,15 +9,27 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPushButton * btn = new QPushButton("退出",this);
-    btn->show();
+    QPushButton * btn1 = new QPushButton("退出",this);
+    btn1->move(600,400);
+    btn1->show();
+
+    QPushButton * btn2 = new QPushButton("打开",this);
+    btn2->move(300,400);
+    btn2->show();
 
 
-    connect(btn,&QPushButton::clicked,this,&QWidget::close);
+    connect(btn1,&QPushButton::clicked,this,&QWidget::close);
+    connect(btn2,&QPushButton::clicked,this,&Widget::newWidget);
 }
 
 Widget::~Widget()
 {
     delete ui;
+}
+
+void Widget::newWidget()
+{
+    Widget *w = new Widget();
+    w->show();
 }
 
