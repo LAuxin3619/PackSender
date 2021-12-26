@@ -9,11 +9,8 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
-    mode(-1)
+    ui(new Ui::MainWindow)
 {
-    std::cout<<"mode: "<<mode<<std::endl;
-
     ui->setupUi(this);
 
     connect(ui->actionnewWindow,&QAction::triggered,this,&MainWindow::newMainWindow);

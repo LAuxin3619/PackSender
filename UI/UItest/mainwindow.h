@@ -22,9 +22,6 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
-
-    QString str;
-    int mode;
 };
 
 #endif // MAINWINDOW_H
