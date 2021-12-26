@@ -27,11 +27,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    ipmessage.cpp
+    ipmessage.cpp \
+    tcpmessage.cpp
 
 HEADERS += \
         mainwindow.h \
-    ipmessage.h
+    ipmessage.h \
+    tcpmessage.h
 
 FORMS += \
         mainwindow.ui
