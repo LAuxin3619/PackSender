@@ -15,15 +15,16 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+signals:
+
 public slots:
     void newMainWindow();
-    void getText();
-    void printText();
 
 private:
     Ui::MainWindow *ui;
 
     QString str;
+    int mode;
 };
 
 #endif // MAINWINDOW_H

@@ -9,14 +9,14 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    mode(-1)
 {
+    std::cout<<"mode: "<<mode<<std::endl;
+
     ui->setupUi(this);
 
     connect(ui->actionnewWindow,&QAction::triggered,this,&MainWindow::newMainWindow);
-    connect(ui->line11,&QLineEdit::returnPressed,this,&MainWindow::getText);
-    connect(ui->line11,&QLineEdit::returnPressed,ui->line11,&QLineEdit::clear);
-    connect(ui->pushButtonPrint,&QPushButton::clicked,this,&MainWindow::printText);
 
 }
 
@@ -31,12 +31,3 @@ void MainWindow::newMainWindow()
     w->show();
 }
 
-void MainWindow::getText()
-{
-    str=ui->line11->text();
-}
-
-void MainWindow::printText()
-{
-    std::cout<<str.toStdString().data()<<std::endl;
-}
