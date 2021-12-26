@@ -14,12 +14,15 @@ public:
     void tcpSetDst(int val);
     void tcpSetText(std::string txt);
 
+    std::string* tcpEquipList();
+
     void showTcp();
 
 private:
     int tcpSrcPort;
     int tcpDstPort;
     std::string tcpText;
+    std::string equipList[10]={"Device1","Device2"};
 };
 
 #endif // TCPMESSAGE_H

@@ -68,5 +68,12 @@ void MainWindow::printTcp()
 
 void MainWindow::setEquip()
 {
+    ui->equipList->clear();
+    std::string *pstr=tcp.tcpEquipList();
+    while (*pstr!=""){
+        ui->equipList->addItem("1","1");
+        pstr++;
+    }
+
     ui->equipList->addItem("Equip1","Equip1");
 }
