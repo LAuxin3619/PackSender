@@ -71,9 +71,8 @@ void MainWindow::setEquip()
     ui->equipList->clear();
     std::string *pstr=tcp.tcpEquipList();
     while (*pstr!=""){
-        ui->equipList->addItem("1","1");
+        const std::string equip = *pstr;
+        ui->equipList->addItem(QString::fromStdString(equip),QString::fromStdString(equip));
         pstr++;
     }
-
-    ui->equipList->addItem("Equip1","Equip1");
 }

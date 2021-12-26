@@ -23,6 +23,7 @@ private:
     int tcpDstPort;
     std::string tcpText;
     std::string equipList[10]={"Device1","Device2"};
+    std::string chosenEquip;
 };
 
 #endif // TCPMESSAGE_H
