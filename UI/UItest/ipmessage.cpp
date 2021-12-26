@@ -1,5 +1,6 @@
 #include "ipmessage.h"
 #include <iostream>
+#include <string>
 
 IpMessage::IpMessage():
     ver(),
@@ -38,25 +39,20 @@ void IpMessage::ipSetTTL(int val)
     this->TTL = val;
 }
 
-void IpMessage::ipSetSrc(int val)
+void IpMessage::ipSetSrc(QString str)
 {
-    this->ipSrc = val;
+    this->ipSrc = str.toStdString();
 }
 
-void IpMessage::ipSetDst(int val)
+void IpMessage::ipSetDst(QString str)
 {
-    this->ipDst = val;
+    this->ipDst = str.toStdString();
 }
 
 void IpMessage::showIp()
 {
-    std::cout<<"Current TCP message is:"<<std::endl;
+    std::cout<<"Current IP message is:"<<std::endl;
     std::cout
-            <<"ipVer: "<<this->ver<<std::endl
-            <<"ipLen: "<<this->len<<std::endl
-            <<"ipUProto: "<<this->uProto<<std::endl
-            <<"ipChkSum: "<<this->chkSum<<std::endl
-            <<"ipTTL: "<<this->TTL<<std::endl
             <<"ipSrc: "<<this->ipSrc<<std::endl
             <<"ipDst: "<<this->ipDst<<std::endl<<std::endl;
 }

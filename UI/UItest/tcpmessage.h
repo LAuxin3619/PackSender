@@ -2,6 +2,7 @@
 #define TCPMESSAGE_H
 
 #include "ipmessage.h"
+#include <string>
 
 
 class TcpMessage
@@ -11,21 +12,14 @@ public:
 
     void tcpSetSrc(int val);
     void tcpSetDst(int val);
-    void tcpSetSeq(int val);
-    void tcpSetOfst(int val);
-    void tcpSetWin(int val);
-    void tcpSetChk(int val);
+    void tcpSetText(std::string txt);
 
     void showTcp();
 
 private:
     int tcpSrcPort;
     int tcpDstPort;
-    int tcpSeq;
-    int tcpOfst;
-    int tcpWin;
-    int tcpChk;
-
+    std::string tcpText;
 };
 
 #endif // TCPMESSAGE_H

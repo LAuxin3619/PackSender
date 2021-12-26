@@ -1,6 +1,8 @@
 #ifndef IPMESSAGE_H
 #define IPMESSAGE_H
 
+#include <QString>
+#include <string>
 
 class IpMessage
 {
@@ -13,8 +15,8 @@ public:
     void ipSetUProto(int val);
     void ipSetChkSum(int val);
     void ipSetTTL(int val);
-    void ipSetSrc(int val);
-    void ipSetDst(int val);
+    void ipSetSrc(QString str);
+    void ipSetDst(QString str);
 
 protected:
     int ver;
@@ -22,8 +24,8 @@ protected:
     int uProto;
     int chkSum;
     int TTL;
-    int ipSrc;
-    int ipDst;
+    std::string ipSrc;
+    std::string ipDst;
 
 };
 

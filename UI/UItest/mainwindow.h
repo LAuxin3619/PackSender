@@ -25,6 +25,7 @@ public slots:
     void printIp();
     void applyTcp();
     void printTcp();
+    void setEquip();
 
 private:
     Ui::MainWindow *ui;

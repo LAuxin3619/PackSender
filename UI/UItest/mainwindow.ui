@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="netLayer">
      <attribute name="title">
@@ -46,113 +46,11 @@
        <attribute name="title">
         <string>IP</string>
        </attribute>
-       <widget class="QLabel" name="label_18">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>120</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>校验和：</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="ipVer">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>30</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="ipTTL">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>150</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="ipUProto">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>90</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QLineEdit" name="ipSrc">
         <property name="geometry">
          <rect>
           <x>120</x>
-          <y>180</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="ipLen">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>60</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_13">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>150</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>生存时间：</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_16">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
           <y>30</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>版本号：</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_17">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>90</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>上层协议号：</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="ipChkSum">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>120</y>
           <width>113</width>
           <height>25</height>
          </rect>
@@ -162,7 +60,7 @@
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>180</y>
+          <y>30</y>
           <width>91</width>
           <height>21</height>
          </rect>
@@ -171,24 +69,11 @@
          <string>源地址：</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>60</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>头部长度：</string>
-        </property>
-       </widget>
        <widget class="QPushButton" name="ipApplyBtn">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>30</y>
+          <x>410</x>
+          <y>290</y>
           <width>89</width>
           <height>25</height>
          </rect>
@@ -200,8 +85,8 @@
        <widget class="QPushButton" name="ipShowBtn">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>60</y>
+          <x>510</x>
+          <y>290</y>
           <width>89</width>
           <height>25</height>
          </rect>
@@ -214,7 +99,7 @@
         <property name="geometry">
          <rect>
           <x>120</x>
-          <y>210</y>
+          <y>60</y>
           <width>113</width>
           <height>25</height>
          </rect>
@@ -224,13 +109,49 @@
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>210</y>
+          <y>60</y>
           <width>91</width>
           <height>21</height>
          </rect>
         </property>
         <property name="text">
          <string>目的地址：</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="equipList">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>30</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>网卡列表：</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkEquip">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>30</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>检查</string>
         </property>
        </widget>
       </widget>
@@ -282,58 +203,6 @@
          <string>目的端口号：</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_3">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>90</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>序列号：</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>120</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>偏移量：</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>150</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>窗口大小：</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>180</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>校验和：</string>
-        </property>
-       </widget>
        <widget class="QLineEdit" name="tcpSrc_txt">
         <property name="geometry">
          <rect>
@@ -354,51 +223,11 @@
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="tcpSeq_txt">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>90</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="tcpOfst_txt">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>120</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="tcpWin_txt">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>150</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="tcpChk_txt">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>180</y>
-          <width>113</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QPushButton" name="tcpApplyBtn">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>30</y>
+          <x>410</x>
+          <y>290</y>
           <width>89</width>
           <height>25</height>
          </rect>
@@ -410,14 +239,79 @@
        <widget class="QPushButton" name="tcpShowBtn">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>60</y>
+          <x>510</x>
+          <y>290</y>
           <width>89</width>
           <height>25</height>
          </rect>
         </property>
         <property name="text">
          <string>显示</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>消息内容：</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tcpSendBtn">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>290</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="tcpText">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>581</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>30</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1024~65535</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>60</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1024~65535</string>
         </property>
        </widget>
       </widget>

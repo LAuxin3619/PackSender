@@ -17,24 +17,9 @@ void TcpMessage::tcpSetDst(int val)
     this->tcpDstPort = val;
 }
 
-void TcpMessage::tcpSetSeq(int val)
+void TcpMessage::tcpSetText(std::string txt)
 {
-    this->tcpSeq = val;
-}
-
-void TcpMessage::tcpSetOfst(int val)
-{
-    this->tcpOfst = val;
-}
-
-void TcpMessage::tcpSetWin(int val)
-{
-    this->tcpWin = val;
-}
-
-void TcpMessage::tcpSetChk(int val)
-{
-    this->tcpChk = val;
+    this->tcpText = txt;
 }
 
 void TcpMessage::showTcp()
@@ -43,8 +28,5 @@ void TcpMessage::showTcp()
     std::cout
             <<"tcpSrcPort: "<<this->tcpSrcPort<<std::endl
             <<"tcpDstPort: "<<this->tcpDstPort<<std::endl
-            <<"tcpSeq: "<<this->tcpSeq<<std::endl
-            <<"tcpOfst: "<<this->tcpOfst<<std::endl
-            <<"tcpWin: "<<this->tcpWin<<std::endl
-            <<"tcpChk: "<<this->tcpChk<<std::endl<<std::endl;
+            <<"tcpDstPort: "<<this->tcpText<<std::endl<<std::endl;
 }
