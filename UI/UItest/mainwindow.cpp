@@ -20,15 +20,25 @@ MainWindow::MainWindow(QWidget *parent) :
     // 设置端口数字输入框，范围1024~65535
     QValidator *intPortValidator = new QIntValidator(1024,65535,this);
 
-    ui->tcpSrc_txt->setValidator(intPortValidator);
-    ui->tcpDst_txt->setValidator(intPortValidator);
+    ui->tcpSrc->setValidator(intPortValidator);
+    ui->tcpDst->setValidator(intPortValidator);
+    ui->udpSrc->setValidator(intPortValidator);
+    ui->udpDst->setValidator(intPortValidator);
 
+
+    // 新建窗口
     connect(ui->actionnewWindow,&QAction::triggered,this,&MainWindow::newMainWindow);
+    // IP发包界面
     connect(ui->ipApplyBtn,&QPushButton::clicked,this,&MainWindow::applyIp);
     connect(ui->ipShowBtn,&QPushButton::clicked,this,&MainWindow::printIp);
+    connect(ui->checkEquip,&QPushButton::clicked,this,&MainWindow::setEquip);
+    // TCP发包界面
     connect(ui->tcpApplyBtn,&QPushButton::clicked,this,&MainWindow::applyTcp);
     connect(ui->tcpShowBtn,&QPushButton::clicked,this,&MainWindow::printTcp);
-    connect(ui->checkEquip,&QPushButton::clicked,this,&MainWindow::setEquip);
+    // UDP发包界面
+    connect(ui->udpApplyBtn,&QPushButton::clicked,this,&MainWindow::applyUdp);
+    connect(ui->udpShowBtn,&QPushButton::clicked,this,&MainWindow::printUdp);
+
 
 }
 
@@ -49,21 +59,33 @@ void MainWindow::applyIp()
     ip.ipSetDst(ui->ipDst->text());
 }
 
-void MainWindow::applyTcp()
-{
-    tcp.tcpSetSrc(ui->tcpSrc_txt->text().toInt());
-    tcp.tcpSetDst(ui->tcpDst_txt->text().toInt());
-    tcp.tcpSetText(ui->tcpText->text().toStdString());
-}
-
 void MainWindow::printIp()
 {
     ip.showIp();
 }
 
+void MainWindow::applyTcp()
+{
+    tcp.tcpSetSrc(ui->tcpSrc->text().toInt());
+    tcp.tcpSetDst(ui->tcpDst->text().toInt());
+    tcp.tcpSetText(ui->tcpText->text().toStdString());
+}
+
 void MainWindow::printTcp()
 {
     tcp.showTcp();
+}
+
+void MainWindow::applyUdp()
+{
+    udp.tcpSetSrc(ui->udpSrc->text().toInt());
+    udp.tcpSetDst(ui->udpDst->text().toInt());
+    udp.tcpSetText(ui->udpText->text().toStdString());
+}
+
+void MainWindow::printUdp()
+{
+    udp.showUdp();
 }
 
 void MainWindow::setEquip()

@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="netLayer">
      <attribute name="title">
@@ -229,7 +229,7 @@
          <string>目的端口号：</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="tcpSrc_txt">
+       <widget class="QLineEdit" name="tcpSrc">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -239,7 +239,7 @@
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="tcpDst_txt">
+       <widget class="QLineEdit" name="tcpDst">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -345,6 +345,143 @@
        <attribute name="title">
         <string>UDP</string>
        </attribute>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>目的端口号：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>30</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1024~65535</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>源端口号：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="udpSrc">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="udpText">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>581</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>消息内容：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="udpDst">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>60</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>60</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1024~65535</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="udpApplyBtn">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>290</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>应用</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="udpShowBtn">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>290</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>显示</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="udpSendBtn">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>290</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>

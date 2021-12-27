@@ -4,7 +4,9 @@
 
 TcpMessage::TcpMessage()
 {
-
+    tcpSrcPort = 0;
+    tcpDstPort = 0;
+    tcpText = "";
 }
 
 void TcpMessage::tcpSetSrc(int val)
@@ -34,5 +36,13 @@ void TcpMessage::showTcp()
     std::cout
             <<"tcpSrcPort: "<<this->tcpSrcPort<<std::endl
             <<"tcpDstPort: "<<this->tcpDstPort<<std::endl
-            <<"tcpDstPort: "<<this->tcpText<<std::endl<<std::endl;
+            <<"tcpText: "<<this->tcpText<<std::endl<<std::endl;
+}
+void TcpMessage::showUdp()
+{
+    std::cout<<"Current UDP message is:"<<std::endl;
+    std::cout
+            <<"udpSrcPort: "<<this->tcpSrcPort<<std::endl
+            <<"udpDstPort: "<<this->tcpDstPort<<std::endl
+            <<"udpText: "<<this->tcpText<<std::endl<<std::endl;
 }

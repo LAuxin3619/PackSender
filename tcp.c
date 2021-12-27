@@ -3,10 +3,10 @@
 int main() {
     libnet_t *handle; /* Libnet句柄 */
     int packet_size; /* 构造的数据包大小 */
-    char *device = "ens33"; /* 设备名字,也支持点十进制的IP地址,会自己找到匹配的设备 */
-    char *src_ip_str = "192.168.31.128"; /* 源IP地址字符串 */
+    char *device = "192.168.220.132"; /* 设备名字,也支持点十进制的IP地址,会自己找到匹配的设备 */
+    char *src_ip_str = "192.168.220.132"; /* 源IP地址字符串 */
     char *dst_ip_str = "172.20.10.13"; /* 目的IP地址字符串 */
-    u_char src_mac[6] = {0x00, 0x0c, 0x29, 0x14, 0x16, 0x43}; /* 源MAC */
+    u_char src_mac[6] = {0x00, 0x0c, 0x29, 0x3e, 0x4b, 0x91}; /* 源MAC */
     u_char dst_mac[6] = {0x3c, 0xf0, 0x11, 0x47, 0x87, 0x2c}; /* 目的MAC */
     u_long dst_ip, src_ip; /* 网路序的目的IP和源IP */
     char error[LIBNET_ERRBUF_SIZE]; /* 出错信息 */
@@ -23,6 +23,7 @@ int main() {
     /* 初始化Libnet */
     if ( (handle = libnet_init(LIBNET_LINK, device, error)) == NULL ) {
         printf("libnet_init failure\n");
+        printf("%s\n",error);
         return (-1);
     };
  
@@ -36,7 +37,7 @@ int main() {
                 payload_s,
                 handle,
                 0
-    );
+    )`
     if (tcp_op_tag == -1) {
         printf("build_tcp_options failure\n");
         return (-2);

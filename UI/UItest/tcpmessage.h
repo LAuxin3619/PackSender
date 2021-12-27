@@ -17,6 +17,7 @@ public:
     std::string* tcpEquipList();
 
     void showTcp();
+    void showUdp();
 
 private:
     int tcpSrcPort;

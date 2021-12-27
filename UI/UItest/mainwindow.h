@@ -5,6 +5,8 @@
 #include "ipmessage.h"
 #include "tcpmessage.h"
 
+typedef TcpMessage UdpMessage; // Tcp与Udp类传递相同的参数
+
 namespace Ui {
 class MainWindow;
 }
@@ -25,6 +27,8 @@ public slots:
     void printIp();
     void applyTcp();
     void printTcp();
+    void applyUdp();
+    void printUdp();
     void setEquip();
 
 private:
@@ -32,6 +36,7 @@ private:
 
     IpMessage ip;
     TcpMessage tcp;
+    UdpMessage udp;
 };
 
 #endif // MAINWINDOW_H
