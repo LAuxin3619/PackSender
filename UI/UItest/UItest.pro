@@ -33,7 +33,8 @@ SOURCES += \
 HEADERS += \
         mainwindow.h \
     ipmessage.h \
-    tcpmessage.h
+    tcpmessage.h \
+    funcforsend.h
 
 FORMS += \
         mainwindow.ui

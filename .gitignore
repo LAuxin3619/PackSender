@@ -468,7 +468,7 @@ build-Front-Desktop_Qt_5_12_0_GCC_64bit-Debug/
 
 .qmake.stash
 moc_predefs.h
-UItest
+
 
 !release/
 !release/UItest

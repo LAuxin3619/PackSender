@@ -1,0 +1,4 @@
+#ifndef FUNCFORSEND_H
+#define FUNCFORSEND_H
+
+#endif // FUNCFORSEND_H
