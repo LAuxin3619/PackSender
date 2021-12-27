@@ -14,8 +14,6 @@ public:
     void tcpSetDst(int val);
     void tcpSetText(std::string txt);
 
-    std::string* tcpEquipList();
-
     void showTcp();
     void showUdp();
 
@@ -23,8 +21,6 @@ private:
     int tcpSrcPort;
     int tcpDstPort;
     std::string tcpText;
-    std::string equipList[10]={"Device1","Device2"};
-    std::string chosenEquip;
 };
 
 #endif // TCPMESSAGE_H

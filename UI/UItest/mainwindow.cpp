@@ -91,7 +91,7 @@ void MainWindow::printUdp()
 void MainWindow::setEquip()
 {
     ui->equipList->clear();
-    std::string *pstr=tcp.tcpEquipList();
+    std::string *pstr=ip.ipEquipList();
     while (*pstr!=""){
         const std::string equip = *pstr;
         ui->equipList->addItem(QString::fromStdString(equip),QString::fromStdString(equip));

@@ -10,22 +10,16 @@ public:
     IpMessage();
 
     void showIp();
-    void ipSetVer(int val);
-    void ipSetLen(int val);
-    void ipSetUProto(int val);
-    void ipSetChkSum(int val);
-    void ipSetTTL(int val);
     void ipSetSrc(QString str);
     void ipSetDst(QString str);
 
+    std::string* ipEquipList();
+
 protected:
-    int ver;
-    int len;
-    int uProto;
-    int chkSum;
-    int TTL;
     std::string ipSrc;
     std::string ipDst;
+    std::string equipList[10]={"Device1","Device2"};
+    std::string chosenEquip;
 
 };
 

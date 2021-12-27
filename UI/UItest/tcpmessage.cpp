@@ -24,12 +24,6 @@ void TcpMessage::tcpSetText(std::string txt)
     this->tcpText = txt;
 }
 
-std::string* TcpMessage::tcpEquipList()
-{
-    std::string *p=&equipList[0];
-    return p;
-}
-
 void TcpMessage::showTcp()
 {
     std::cout<<"Current TCP message is:"<<std::endl;

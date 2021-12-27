@@ -197,7 +197,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tcp">
        <attribute name="title">
@@ -285,7 +285,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>消息内容：</string>
+         <string>TCP消息：</string>
         </property>
        </widget>
        <widget class="QPushButton" name="tcpSendBtn">
@@ -417,7 +417,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>消息内容：</string>
+         <string>UDP消息：</string>
         </property>
        </widget>
        <widget class="QLineEdit" name="udpDst">
@@ -536,6 +536,38 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>tabWidget1</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>ipSrc</tabstop>
+  <tabstop>ipDst</tabstop>
+  <tabstop>equipList</tabstop>
+  <tabstop>checkEquip</tabstop>
+  <tabstop>ipApplyBtn</tabstop>
+  <tabstop>ipShowBtn</tabstop>
+  <tabstop>tabWidget2</tabstop>
+  <tabstop>tcpSrc</tabstop>
+  <tabstop>tcpDst</tabstop>
+  <tabstop>tcpText</tabstop>
+  <tabstop>tcpApplyBtn</tabstop>
+  <tabstop>tcpShowBtn</tabstop>
+  <tabstop>tcpSendBtn</tabstop>
+  <tabstop>udpSrc</tabstop>
+  <tabstop>udpDst</tabstop>
+  <tabstop>udpText</tabstop>
+  <tabstop>udpApplyBtn</tabstop>
+  <tabstop>udpShowBtn</tabstop>
+  <tabstop>udpSendBtn</tabstop>
+  <tabstop>tcpShowBtn_2</tabstop>
+  <tabstop>tcpSendBtn_2</tabstop>
+  <tabstop>tcpText_3</tabstop>
+  <tabstop>tcpSrc_txt_4</tabstop>
+  <tabstop>tcpText_4</tabstop>
+  <tabstop>tcpDst_txt_4</tabstop>
+  <tabstop>tcpSrc_txt_3</tabstop>
+  <tabstop>tcpDst_txt_3</tabstop>
+  <tabstop>tcpApplyBtn_2</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
