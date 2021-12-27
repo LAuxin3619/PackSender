@@ -1,3 +1,11 @@
+This is a project aiming to create and send packages to assigned hosts.
+
+Authors:
+
+https://github.com/LAuxin3619
+
+https://github.com/Vorrad
+
 **TCP报文:**
 1. 网卡名称--查找可用设备然后选择
     如:
