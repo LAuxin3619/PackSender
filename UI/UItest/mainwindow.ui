@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="netLayer">
      <attribute name="title">
@@ -49,7 +49,7 @@
        <widget class="QLineEdit" name="ipSrc">
         <property name="geometry">
          <rect>
-          <x>120</x>
+          <x>140</x>
           <y>30</y>
           <width>113</width>
           <height>25</height>
@@ -61,12 +61,12 @@
          <rect>
           <x>20</x>
           <y>30</y>
-          <width>91</width>
+          <width>101</width>
           <height>21</height>
          </rect>
         </property>
         <property name="text">
-         <string>源地址：</string>
+         <string>源IP地址：</string>
         </property>
        </widget>
        <widget class="QPushButton" name="ipApplyBtn">
@@ -98,7 +98,7 @@
        <widget class="QLineEdit" name="ipDst">
         <property name="geometry">
          <rect>
-          <x>120</x>
+          <x>140</x>
           <y>60</y>
           <width>113</width>
           <height>25</height>
@@ -110,54 +110,18 @@
          <rect>
           <x>20</x>
           <y>60</y>
-          <width>91</width>
+          <width>101</width>
           <height>21</height>
          </rect>
         </property>
         <property name="text">
-         <string>目的地址：</string>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="equipList">
-        <property name="geometry">
-         <rect>
-          <x>420</x>
-          <y>30</y>
-          <width>181</width>
-          <height>25</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>30</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>网卡列表：</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="checkEquip">
-        <property name="geometry">
-         <rect>
-          <x>610</x>
-          <y>30</y>
-          <width>89</width>
-          <height>25</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>检查</string>
+         <string>目的IP地址：</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_18">
         <property name="geometry">
          <rect>
-          <x>240</x>
+          <x>260</x>
           <y>30</y>
           <width>91</width>
           <height>21</height>
@@ -170,8 +134,80 @@
        <widget class="QLabel" name="label_25">
         <property name="geometry">
          <rect>
-          <x>240</x>
+          <x>260</x>
           <y>60</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>X.X.X.X</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>60</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>X.X.X.X</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="macDst">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>60</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>60</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>目的mac地址：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="macSrc">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>30</y>
+          <width>113</width>
+          <height>25</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>30</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>源mac地址：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>30</y>
           <width>91</width>
           <height>21</height>
          </rect>
@@ -541,8 +577,6 @@
   <tabstop>tabWidget</tabstop>
   <tabstop>ipSrc</tabstop>
   <tabstop>ipDst</tabstop>
-  <tabstop>equipList</tabstop>
-  <tabstop>checkEquip</tabstop>
   <tabstop>ipApplyBtn</tabstop>
   <tabstop>ipShowBtn</tabstop>
   <tabstop>tabWidget2</tabstop>
@@ -558,15 +592,6 @@
   <tabstop>udpApplyBtn</tabstop>
   <tabstop>udpShowBtn</tabstop>
   <tabstop>udpSendBtn</tabstop>
-  <tabstop>tcpShowBtn_2</tabstop>
-  <tabstop>tcpSendBtn_2</tabstop>
-  <tabstop>tcpText_3</tabstop>
-  <tabstop>tcpSrc_txt_4</tabstop>
-  <tabstop>tcpText_4</tabstop>
-  <tabstop>tcpDst_txt_4</tabstop>
-  <tabstop>tcpSrc_txt_3</tabstop>
-  <tabstop>tcpDst_txt_3</tabstop>
-  <tabstop>tcpApplyBtn_2</tabstop>
  </tabstops>
  <resources/>
  <connections/>

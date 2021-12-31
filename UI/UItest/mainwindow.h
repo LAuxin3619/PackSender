@@ -29,7 +29,8 @@ public slots:
     void printTcp();
     void applyUdp();
     void printUdp();
-    void setEquip();
+    void sendTcp();
+    void sendUdp();
 
 private:
     Ui::MainWindow *ui;

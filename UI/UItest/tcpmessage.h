@@ -17,10 +17,11 @@ public:
     void showTcp();
     void showUdp();
 
-private:
+// private:
     int tcpSrcPort;
     int tcpDstPort;
     std::string tcpText;
+    int tcpTextLen;
 };
 
 #endif // TCPMESSAGE_H

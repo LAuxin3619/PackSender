@@ -13,13 +13,12 @@ public:
     void ipSetSrc(QString str);
     void ipSetDst(QString str);
 
-    std::string* ipEquipList();
-
-protected:
+// protected:
     std::string ipSrc;
     std::string ipDst;
-    std::string equipList[10]={"Device1","Device2"};
-    std::string chosenEquip;
+    u_char macSrc[6];
+    u_char macDst[6];
+
 
 };
 

@@ -473,3 +473,6 @@ moc_predefs.h
 !release/
 !release/UItest
 !release/*.so.*
+execute/PackSend
+.gitignore
+execute/packsend

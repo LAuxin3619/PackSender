@@ -1,12 +1,14 @@
 #include "tcpmessage.h"
 #include "ipmessage.h"
 #include <iostream>
+#include <cstring>
 
 TcpMessage::TcpMessage()
 {
     tcpSrcPort = 0;
     tcpDstPort = 0;
     tcpText = "";
+    tcpTextLen = 0;
 }
 
 void TcpMessage::tcpSetSrc(int val)
@@ -22,6 +24,7 @@ void TcpMessage::tcpSetDst(int val)
 void TcpMessage::tcpSetText(std::string txt)
 {
     this->tcpText = txt;
+    this->tcpTextLen = strlen(txt.data());
 }
 
 void TcpMessage::showTcp()
